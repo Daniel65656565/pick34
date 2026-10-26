@@ -1,5 +1,5 @@
 // Guarda la app en el teléfono para que abra sin internet.
-var CACHE = 'pick34-202610251440';
+var CACHE = 'pick34-202610252340';
 var ARCHIVOS = ['./', './index.html', './manifest.webmanifest', './icono-192.png', './icono-512.png'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(ARCHIVOS); }).then(function () { return self.skipWaiting(); }));
